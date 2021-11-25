@@ -3,6 +3,7 @@ import tracks from "./Audioplayer/tracks";
 import voice from "./Audioplayer/voice";
 import React, {useEffect} from "react";
 import Count from "./count";
+import Player from "./MusicPlayer/audio/player";
 
 
 function Announcement() {
@@ -30,8 +31,8 @@ function Announcement() {
             </p>
 
             {seconds}
-            <Count/>
 
+            <AudioPlayer tracks={tracks} voice={voice}/>
 
 
             <div className="AudioClass">

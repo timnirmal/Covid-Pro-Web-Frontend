@@ -8,23 +8,6 @@ const {Component} = require("react");
 
 let isPlaying = true;
 
-const onTimer = (count) => {
-    if (!(count === 0)) {
-        if (count === 10) {
-            play();
-        }
-        else if ((count % 12) === 0) {
-            console.log(count);
-            console.log(isPlaying);
-            if (isPlaying){
-                pause();
-            }
-            else{
-                play();
-            }
-        }
-    }
-};
 
 var audio = new Audio(tracks[0].audioSrc);
 
